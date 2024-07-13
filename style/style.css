@@ -1,40 +1,47 @@
 /* variable for the color */
-:root{
-    --main_color:#0265f9;
+:root {
+    --main_color: #0265f9;
 }
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
-    font-family: "Roboto",sans-serif;
+
+body {
+    font-family: "Roboto", sans-serif;
 }
-a{
+
+a {
     /* text-decoration: none;
     color: #000; */
     all: unset;
 }
-ul li{
+
+ul li {
     list-style: none;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 15px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background-color: #000;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: var(--main_color);
     border-radius: 5px;
 }
 
 /* ==============Header Section============= */
-.header{
+.header {
     padding: 25px 12%;
     background-color: #000000;
     color: #fff;
@@ -45,52 +52,63 @@ ul li{
     position: fixed;
     z-index: 10;
 }
-.header .logo{
+
+.header .logo {
     font-size: 35px;
     font-weight: 700;
     cursor: pointer;
 }
-nav.navbar ul{
+
+nav.navbar ul {
     display: flex;
     gap: 30px;
     font-size: 18px;
 }
-nav.navbar ul li{
+
+nav.navbar ul li {
     cursor: pointer;
 }
-nav.navbar ul li a{
-    transition:0.3s ;
+
+nav.navbar ul li a {
+    transition: 0.3s;
 }
-nav.navbar ul li a:hover{
+
+nav.navbar ul li a:hover {
     color: var(--main_color);
     text-decoration: underline;
 }
+
 /* ========================Home=========================== */
-main.home{
+main.home {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(241,241,241);
+    background-color: rgb(241, 241, 241);
     display: flex;
     gap: 7rem;
     padding: 30px 12% 0;
     align-items: center;
 }
-.home_content h3{
+
+.home_content h3 {
     font-size: 62px;
     margin-bottom: 10px;
 }
-.home_content h1{
+
+.home_content h1 {
     font-size: 50px;
     line-height: 1.2;
 }
-.home_content h1 span{
+
+.home_content h1 span {
     color: var(--main_color);
 }
-.home_content p{
+
+.home_content p {
     font-size: 18px;
     margin: 25px 0 30px;
 }
-.contact_btn button{
+
+.contact_btn button {
     width: 300px;
     outline: none;
     /* outline is the defalut border aroud the item */
@@ -107,26 +125,32 @@ main.home{
     animation: movebtn 1s infinite 3s;
 
 }
-.contact_btn button:hover{
+
+.contact_btn button:hover {
     opacity: 1;
 }
-@keyframes movebtn{
-    0%{
+
+@keyframes movebtn {
+    0% {
         scale: 1;
     }
-    50%{
+
+    50% {
         scale: 1.04;
     }
-    100%{
+
+    100% {
         scale: 1;
     }
 }
-.home_img img{
+
+.home_img img {
     border-radius: 20px;
     filter: drop-shadow(0 0 15px #000);
 }
+
 /* =====================================about me section============== */
-.about_me{
+.about_me {
     width: 100%;
     min-height: 100vh;
     background-color: #242323;
@@ -137,20 +161,25 @@ main.home{
     justify-content: center;
     gap: 7rem;
 }
-.about_me_img img{
+
+.about_me_img img {
     border-radius: 20px;
     filter: drop-shadow(0 0 15px var(--main_color));
 }
-.about_me_content h1{
+
+.about_me_content h1 {
     font-size: 50px;
     line-height: 1.5;
 }
-.about_me_content h1 span{
+
+.about_me_content h1 span {
     color: var(--main_color);
 }
-.about_me_content h4{
+
+.about_me_content h4 {
     margin: 30px 0 40px;
 }
+
 .icons {
     /* background-color: var(--main_color); */
     display: flex;
@@ -158,7 +187,7 @@ main.home{
     /* justify-content: space-evenly; */
     gap: 30px;
     justify-content: center;
-    margin:  0 15px 0 0;
+    margin: 0 15px 0 0;
     background-color: #242323;
 }
 
@@ -179,42 +208,50 @@ main.home{
     cursor: pointer;
     transition: 0.3s;
 }
-.link1:hover{
+
+.link1:hover {
     scale: 1.5;
 }
-.link2:hover{
+
+.link2:hover {
     scale: 1.5;
 }
-.link3:hover{
+
+.link3:hover {
     scale: 1.5;
 }
-.link4:hover{
+
+.link4:hover {
     scale: 1.5;
 }
+
 /* =======================projects======================== */
-section.projects{
+section.projects {
     padding: 8% 12% 13%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: rgb(241,241,241);
+    background-color: rgb(241, 241, 241);
     position: relative;
 }
-section.projects h2{
-    position:absolute;
+
+section.projects h2 {
+    position: absolute;
     top: 20px;
     font-size: 60px;
     color: #00000048;
 }
-.project-cards{
+
+.project-cards {
     display: flex;
     gap: 4rem;
     justify-content: center;
     margin-top: 20px;
 }
-.project-cards .project-card{
+
+.project-cards .project-card {
     background-color: #bebebe67;
     border-radius: 10px;
     max-width: 435px;
@@ -222,16 +259,19 @@ section.projects h2{
     padding: 10px;
     transition: 0.3s;
 }
-.project-cards .project-card:hover{
+
+.project-cards .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgb(0, 0, 0,0.19);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.19);
 }
-.project-cards .project-card img{
+
+.project-cards .project-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-.project-cards .project-card h3{
+
+.project-cards .project-card h3 {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -239,47 +279,57 @@ section.projects h2{
     color: #0c0c0c;
     transition: .3s;
 }
-.project-cards .project-card:hover h3{
+
+.project-cards .project-card:hover h3 {
     color: var(--main_color);
 }
-.project-cards .project-card p{
+
+.project-cards .project-card p {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 60px;
 }
-.project-links{
+
+.project-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.project-links .bxl-github{
+
+.project-links .bxl-github {
     font-size: 25px;
     cursor: pointer;
 }
-.project-links .live-demo{
+
+.project-links .live-demo {
     color: var(--main_color);
     cursor: pointer;
 }
+
 /* ========================contact section=================== */
-section.contact{
+section.contact {
     text-align: center;
     background-color: #000;
     font-size: 20px;
 }
-section.contact .heading-title{
+
+section.contact .heading-title {
     font-size: 60px;
     color: #ffffff65;
     margin-bottom: 100px;
     position: relative;
     top: 20px;
 }
-section.contact form{
+
+section.contact form {
     display: flex;
     flex-direction: column;
     max-width: 50em;
     margin: 3rem auto 0;
 }
-section.contact form .input-box input,section.contact form textarea{
+
+section.contact form .input-box input,
+section.contact form textarea {
     width: 80%;
     padding: 1.5em;
     font-size: 18px;
@@ -289,11 +339,13 @@ section.contact form .input-box input,section.contact form textarea{
     border: none;
     margin-bottom: 30px;
 }
-section.contact .send-btn{
+
+section.contact .send-btn {
     margin-bottom: 50px;
 
 }
-section.contact .send-btn input{
+
+section.contact .send-btn input {
     width: 200px;
     outline: none;
     border: none;
@@ -306,17 +358,20 @@ section.contact .send-btn input{
     opacity: 0.8;
     transition: .3s;
 }
-section.contact .send-btn input:hover{
+
+section.contact .send-btn input:hover {
     opacity: 1;
 }
+
 /* ========================footer section=================== */
-footer.footer{
+footer.footer {
     padding: 0 10%;
     background-color: #252525;
     color: #fff;
     width: 100%;
 }
-footer p{
+
+footer p {
     text-align: center;
     padding: 30px 0;
 }
