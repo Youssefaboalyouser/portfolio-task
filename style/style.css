@@ -249,6 +249,7 @@ section.projects h2 {
     gap: 4rem;
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .project-cards .project-card {
