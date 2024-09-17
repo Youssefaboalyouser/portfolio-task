@@ -123,11 +123,12 @@ main.home {
     transition: 0.3s;
     /* animation: name of the animation , time delay , how many of repeat , wait a time before starting */
     animation: movebtn 1s infinite 3s;
-
+    animation-play-state: running;
 }
 
 .contact_btn button:hover {
     opacity: 1;
+    animation-play-state: paused;
 }
 
 @keyframes movebtn {
