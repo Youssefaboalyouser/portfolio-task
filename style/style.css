@@ -260,6 +260,7 @@ section.projects h2 {
     overflow: hidden;
     padding: 10px;
     transition: 0.3s;
+    width: fit-content;
 }
 
 .project-cards .project-card:hover {
